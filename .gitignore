@@ -1,3 +1,4 @@
 node_modules
 .env
 SAK.json
+serviceAccountKey.json
