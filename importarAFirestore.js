@@ -1,4 +1,4 @@
-const admin = require("firebase-admin");
+/*const admin = require("firebase-admin");
 const fs = require("fs");
 const path = require("path");
 
@@ -34,4 +34,4 @@ async function importarVideojuegos() {
 
 importarVideojuegos().catch((err) => {
   console.error("❌ Error importando:", err);
-});
+});*/

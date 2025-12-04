@@ -1,7 +1,6 @@
 const admin = require("firebase-admin");
 const path = require("path");
 
-// Carga la llave del service account
 const serviceAccount = require(path.join(
   __dirname,
   "../../serviceAccountKey.json"
@@ -10,6 +9,7 @@ const serviceAccount = require(path.join(
 if (!admin.apps.length) {
   admin.initializeApp({
     credential: admin.credential.cert(serviceAccount),
+    projectId: serviceAccount.project_id,
   });
 }
 
