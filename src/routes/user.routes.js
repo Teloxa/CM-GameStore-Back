@@ -15,4 +15,8 @@ router.get("/:userId/favorites", favoritesController.getFavorites);
 // POST /api/users/:userId/favorites
 router.post("/:userId/favorites", favoritesController.addFavorite);
 
+// DELETE
+router.delete("/:userId/favorites/:gameId", favoritesController.removeFavorite);
+
+
 module.exports = router;
